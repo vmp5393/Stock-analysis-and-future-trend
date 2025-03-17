@@ -29,8 +29,8 @@ def predict_trend(df, days=30):
 
 # User inputs:
 ticker = "DIS"  #Disney stock
-start_date = "2023-01-01"
-end_date = "2024-01-01"
+start_date = "2023-01-01"       # year/month/date
+end_date = "2025-02-01"         # year/month/date    
 
 df = get_stock_data(ticker, start_date, end_date)
 df = compute_moving_averages(df, window=50)
